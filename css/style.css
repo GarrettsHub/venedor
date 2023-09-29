@@ -1,0 +1,13 @@
+:root {
+    --topHeader: #f5f5f5;
+    --banner: #d8d9d4;
+    --grad: radial-gradient(
+        at top center,
+        #eeedeb,
+        var(--banner) 40%
+    );
+    --topFoot: #d6d6d6;
+    --bottomFoot: #434b4d;
+}
+
+* {box-sizing: border-box;}
