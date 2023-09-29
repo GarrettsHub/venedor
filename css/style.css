@@ -11,3 +11,16 @@
 }
 
 * {box-sizing: border-box;}
+
+
+#topHeader {
+    background-color: var(--topHeader);
+}
+
+footer {
+    background-color: var(--bottomFoot);
+}
+
+#topFoot {
+    background-color: var(--topFoot);
+}
