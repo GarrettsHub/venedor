@@ -8,10 +8,17 @@
     );
     --topFoot: #d6d6d6;
     --bottomFoot: #434b4d;
+    --hover: #0fc3d1;
+    --button: #e6e6e6;
+    --hfont: 'Zilla Slab', serif;
+    --bfont: 'Inter', sans-serif;
 }
 
 * {box-sizing: border-box;}
 
+body {
+    font-family: var(--bfont);
+}
 
 #topHeader {
     background-color: var(--topHeader);
@@ -23,4 +30,130 @@ footer {
 
 #topFoot {
     background-color: var(--topFoot);
+}
+
+a {
+    text-decoration: none;
+    color: #0fc3d1;
+}
+
+.card, .card-footer {
+    border: none;
+}
+
+.card-footer {
+    background: none;
+}
+
+.heading {
+    font-size: 40px;
+    font-family: var(--hfont);
+}
+
+.late-div {
+    position: relative;
+    margin-top: 40px;
+}
+
+.late-sub {
+    margin-top: 5px;
+    border-left: 5px solid var(--hover);
+    padding-left: 5px;
+    font-size: 45px;
+}
+
+.late-text {
+    color: #a1a1a1;
+}
+
+.line {
+    position:absolute;
+    top: 11px;
+    width: 78%;
+    left: 13%;
+}
+
+.latest-btn {
+    position: absolute;
+    background-color: var(--button);
+    border-radius: 0;
+    padding-left: 15px;
+    border: 1px solid rgb(171, 171, 171);
+    right: 0;
+    top: 10px;
+}
+
+.latest-btn:first-child {
+    right: 44px;
+}
+
+.latest-btn:hover {
+    background-color: #0fc3d1;
+    color: whitesmoke;
+}
+
+.circle {
+    background-color: #0fc3d1;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.period {
+    color: #0fc3d1;
+    border-radius: 1px;
+    width: 100px;
+    height: 100px;
+}
+
+.my-btn {
+    background-color: var(--button);
+    border-radius: 0;
+    color: #777;
+    margin: 0 5px;
+}
+
+.blue-btn {
+    background-color: #0fc3d1;
+}
+
+.my-btn:hover {
+    background-color: var(--button);
+}
+
+
+.head-item {
+    text-transform: uppercase;
+    margin-right: 25px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.head-link:hover {
+    color: #0fc3d1;
+}
+
+.my-search {
+    border-radius: 0;
+    font-style: italic;
+}
+
+.my-icon {
+    background-color: var(--button);
+    color: gray;
+    border: none;
+    border-radius: 0;
+}
+
+.sale {
+    margin-top: 15px;
+}
+
+.pic-inner {
+    margin: 0;
+    padding: 0;
+}
+
+.welc-div {
+    margin-top: 50px;
 }

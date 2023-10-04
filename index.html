@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Venedor</title>
@@ -45,24 +51,36 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <h1 class="heading navbar-brand"> 
-                        <span>Ve</span>nedor
+                    <span class="circle">Ve</span>nedor<span class="period">.</span>
                     </h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <!-- logo here -->
+                        <ul class="navbar-nav mh-ul ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item mh-item">
                                 <button class="btn my-btn">US Dollar</button>
                             </li>
-                            <li class="nav-item">
-                                <!-- logo here -->
-                                <button class="btn my-btn">English</button>
+                            <li class="nav-item mh-item">
+                                <button class="btn my-btn">
+                                    <span class="eng-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                            <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                                            <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                                        </svg>
+                                    </span>
+                                    English
+                                </button>
                             </li>
-                            <li class="nav-item">
-                                <!-- logo here -->
-                                <button class="btn my-btn">0 item(s)-$0.00</button>
+                            <li class="nav-item mh-item">
+                                <button class="btn my-btn blue-btn text-light">
+                                    <span class="cart-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                    </span>
+                                    0 item(s)-$0.00
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -71,29 +89,29 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">fashion</a>
+                        <ul class="navbar-nav head-nav">
+                            <li class="nav-item head-item">
+                                <a href="#" class="nav-link head-link">fashion</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">electronics</a>
+                            <li class="nav-item head-item">
+                                <a href="#" class="nav-link head-link">electronics</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">gifts</a>
+                            <li class="nav-item head-item">
+                                <a href="#" class="nav-link head-link">gifts</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">books</a>
+                            <li class="nav-item head-item">
+                                <a href="#" class="nav-link head-link">books</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">at home</a>
+                            <li class="nav-item head-item">
+                                <a href="#" class="nav-link head-link">at home</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">music</a>
+                            <li class="nav-item head-item">
+                                <a href="#" class="nav-link head-link">music</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-secondary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <input class="form-control my-search me-2" type="search" placeholder="Search here..." aria-label="Search">
+                            <button class="btn my-icon btn-secondary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg></button>
                         </form>
@@ -104,14 +122,10 @@
     </header>
     <main class="main" id="main">
         <section class="section" id="topMain">
-            <div class="container-fluid inner">
+            <div class="container-fluid pic-inner">
                 <div class="row">
                     <div class="col-12">
-                        <img src="https://via.placeholder.com/2500x500" alt="placeholder img" class="img-fluid image"/>
-                        <h1 class="subhead1">new</h1>
-                        <h2 class="subhead2">men collection</h2>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod obcaecati mollitia suscipit, fugit quaerat placeat nihil at saepe voluptatibus quisquam expedita temporibus ipsum similique ut cupiditate, pariatur dolores quia qui, impedit consequuntur beatae quidem.</p>
-                        <button class="btn my-btn">shop now</button>
+                        <img src="images/banner.jpeg" alt="placeholder img" class="img-fluid image"/>
                     </div>
                 </div>
             </div>
@@ -120,30 +134,33 @@
             <div class="container inner">
                 <div class="row">
                     <div class="col-4">
-                        <img src="https://via.placeholder.com/300x200" alt="placeholder img" class="img-fluid image"/>
+                        <img src="images/truck.jpeg" alt="placeholder img" class="w-100 h-100 truck img-fluid image"/>
                     </div>
                     <div class="col-4">
-                        <img src="https://via.placeholder.com/300x200" alt="placeholder img" class="img-fluid image"/>
+                        <img src="images/sales.jpeg" alt="placeholder img" class="w-100 sale img-fluid image"/>
                     </div>
                     <div class="col-4">
-                        <img src="https://via.placeholder.com/300x200" alt="placeholder img" class="img-fluid image"/>
+                        <img src="images/newa.jpeg" alt="placeholder img" class="w-100 h-100 newa img-fluid image"/>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section" id="lateSect">
-            <div class="container">
+            <div class="container late-div">
                 <div class="col-6">
-                    <h2 class="subhead">Latest</h2>
-                    <p class="text">buy discount items from the latest collection of world brands</p>
+                    <h2 class="subhead late-sub">Latest</h2>
                 </div>
-                <div class="col-6">
-                    <button class="btn"> 
+                <div class="line">
+                    <hr>
+                </div>
+                <p class="text late-text">Buy discount items from the latest collection of world brands</p>
+                <div class="col-6 late-btn">
+                    <button class="btn latest-btn"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                     </svg> 
                     </button>
-                    <button class="btn">
+                    <button class="btn latest-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -152,45 +169,45 @@
                 <div class="row row-cols-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/brace.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
                                 <p class="card-text">Jewlery Bracelet Cara Accessories</p>
                             </div>
-                            <footer class="card-footer">
-                                <button class="btn btn-secondary">add to cart</button>
+                            <footer class="card-footer text-center">
+                                <button class="btn text-uppercase btn-secondary">add to cart</button>
                             </footer>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/coatcaot.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
-                                <p class="card-text">Jewlery Bracelet Cara Accessories</p>
+                                <p class="card-text text-capitalize">jessican london short trench coat</p>
                             </div>
-                            <footer class="card-footer">
-                                <button class="btn btn-secondary">add to cart</button>
+                            <footer class="card-footer text-center">
+                                <button class="btn text-uppercase btn-secondary">add to cart</button>
                             </footer>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/gloveoj.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
-                                <p class="card-text">Jewlery Bracelet Cara Accessories</p>
+                                <p class="card-text text-capitalize">mocha stretch leather gloves</p>
                             </div>
-                            <footer class="card-footer">
-                                <button class="btn btn-secondary">add to cart</button>
+                            <footer class="card-footer text-center">
+                                <button class="btn text-uppercase btn-secondary">add to cart</button>
                             </footer>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/cardigan.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
-                                <p class="card-text">Jewlery Bracelet Cara Accessories</p>
+                                <p class="card-text text-capitalize">limited edition knitted sweater</p>
                             </div>
-                            <footer class="card-footer">
-                                <button class="btn btn-secondary">add to cart</button>
+                            <footer class="card-footer text-center">
+                                <button class="btn text-uppercase btn-secondary">add to cart</button>
                             </footer>
                         </div>
                     </div>
@@ -198,7 +215,7 @@
             </div>
         </section>
         <section class="section" id="welcSect">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-between welc-div">
                 <div class="row">
                     <div class="col-6">
                         <h2 class="subheading">Welcome to Venedor</h2>
@@ -207,7 +224,7 @@
                         <a href="#">Buy Venedor Theme!</a>
                     </div>
                     <div class="col-6">
-                        <img src="https://via.placeholder.com/300x300" alt="placeholder img" class="img-fluid image w-100"/>
+                        <img src="images/phones.jpeg" alt="placeholder img" class="img-fluid image w-100"/>
                     </div>
                 </div>
             </div>
@@ -233,44 +250,44 @@
                 <div class="row row-cols-4">
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/heels.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
                                 <p class="card-text">Jewlery Bracelet Cara Accessories</p>
                             </div>
-                            <footer class="card-footer">
+                            <footer class="card-footer text-center">
                                 <button class="btn btn-secondary">add to cart</button>
                             </footer>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/purse.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
                                 <p class="card-text">Jewlery Bracelet Cara Accessories</p>
                             </div>
-                            <footer class="card-footer">
+                            <footer class="card-footer text-center">
                                 <button class="btn btn-secondary">add to cart</button>
                             </footer>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/loafs.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
                                 <p class="card-text">Jewlery Bracelet Cara Accessories</p>
                             </div>
-                            <footer class="card-footer">
+                            <footer class="card-footer text-center">
                                 <button class="btn btn-secondary">add to cart</button>
                             </footer>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image"/>
+                            <img src="images/jacket.jpeg" alt="placeholder img" class="img-fluid image"/>
                             <div class="card-body">
                                 <p class="card-text">Jewlery Bracelet Cara Accessories</p>
                             </div>
-                            <footer class="card-footer">
+                            <footer class="card-footer text-center">
                                 <button class="btn btn-secondary">add to cart</button>
                             </footer>
                         </div>
@@ -296,12 +313,12 @@
                 </button>
             </div>
             <div class="row row-cols-6">
-                <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid image"/>
-                <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid image"/>
-                <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid image"/>
-                <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid image"/>
-                <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid image"/>
-                <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid image"/>
+                <img src="images/brandlogo.jpeg" alt="placeholder img" class="img-fluid image"/>
+                <img src="images/brandlogo.jpeg" alt="placeholder img" class="img-fluid image"/>
+                <img src="images/brandlogo.jpeg" alt="placeholder img" class="img-fluid image"/>
+                <img src="images/brandlogo.jpeg" alt="placeholder img" class="img-fluid image"/>
+                <img src="images/brandlogo.jpeg" alt="placeholder img" class="img-fluid image"/>
+                <img src="images/brandlogo.jpeg" alt="placeholder img" class="img-fluid image"/>
             </div>
         </div>
         </section>
@@ -330,22 +347,22 @@
                         <h3 class="subheading">my account</h3>
                         <ul class="list">
                             <li class="nav-item">
-                                <a href="" class="nav-link">My Account</a>
+                                <a href="" class="nav-link link-light">My Account</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Personal Information</a>
+                                <a href="" class="nav-link link-light">Personal Information</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Address</a>
+                                <a href="" class="nav-link link-light">Address</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Discount</a>
+                                <a href="" class="nav-link link-light">Discount</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Orders History</a>
+                                <a href="" class="nav-link link-light">Orders History</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Your Vouchers</a>
+                                <a href="" class="nav-link link-light">Your Vouchers</a>
                             </li>
                         </ul>
                     </div>
@@ -353,31 +370,31 @@
                         <h3 class="subheading">information</h3>
                         <ul class="list">
                             <li class="nav-item">
-                                <a href="" class="nav-link">New Products</a>
+                                <a href="" class="nav-link link-light">New Products</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Top Sellers</a>
+                                <a href="" class="nav-link link-light">Top Sellers</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Specials</a>
+                                <a href="" class="nav-link link-light">Specials</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Manufacturers</a>
+                                <a href="" class="nav-link link-light">Manufacturers</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Suppliers</a>
+                                <a href="" class="nav-link link-light">Suppliers</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Our Stores</a>
+                                <a href="" class="nav-link link-light">Our Stores</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-3">
                         <h3 class="subheading">from twitter</h3>
-                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, doloremque! Odit aperiam omnis vero libero at ducimus? <a href="#" class="">https://sample.net/reading</a>
+                        <p class="text link-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, doloremque! Odit aperiam omnis vero libero at ducimus? <a href="#" class="">https://sample.net/reading</a>
                             <span class="span d-block">about 1 hour ago</span>
                         </p>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, soluta! Nisi numquam <a href="">https://sample.net/reading</a> repellat dolores?
+                        <p class="text link-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, soluta! Nisi numquam <a href="">https://sample.net/reading</a> repellat dolores?
                         <span class="span d-block">about 3 hours ago</span>
                     </p>
                     </div>
@@ -395,28 +412,28 @@
                         </p>
                         <div class="row row-cols-3">
                             <figure class="figure">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid figure-img" />
-                                <figcaption class="figure-caption">Anna</figcaption>
+                                <img src="images/anna.jpeg" alt="placeholder img" class="img-fluid figure-img" />
+                                <figcaption class="figure-caption text-center text-light">Anna</figcaption>
                             </figure>
                             <figure class="figure">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid figure-img" />
-                                <figcaption class="figure-caption">Tom</figcaption>
+                                <img src="images/tom.jpeg" alt="placeholder img" class="img-fluid figure-img" />
+                                <figcaption class="figure-caption text-center text-light">Tom</figcaption>
                             </figure>
                             <figure class="figure">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid figure-img" />
-                                <figcaption class="figure-caption">Garfield</figcaption>
+                                <img src="images/antuan.jpeg" alt="placeholder img" class="img-fluid figure-img" />
+                                <figcaption class="figure-caption text-center text-light">Antuan</figcaption>
                             </figure>
                             <figure class="figure">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid figure-img" />
-                                <figcaption class="figure-caption">Mila</figcaption>
+                                <img src="images/mila.jpeg" alt="placeholder img" class="img-fluid figure-img" />
+                                <figcaption class="figure-caption text-center text-light">Mila</figcaption>
                             </figure>
                             <figure class="figure">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid figure-img" />
-                                <figcaption class="figure-caption">Justine</figcaption>
+                                <img src="images/justine.jpeg" alt="placeholder img" class="img-fluid figure-img" />
+                                <figcaption class="figure-caption text-center text-light">Justine</figcaption>
                             </figure>
                             <figure class="figure">
-                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid figure-img" />
-                                <figcaption class="figure-caption">Maria</figcaption>
+                                <img src="images/maria.jpeg" alt="placeholder img" class="img-fluid figure-img" />
+                                <figcaption class="figure-caption text-center text-light link-light">Maria</figcaption>
                             </figure>
                         </div>
                     </div>
